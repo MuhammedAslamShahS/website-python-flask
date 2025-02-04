@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymouse">
+  <title class="text-center"">Devdopz</title>
+  <style>
+    #banner{
+      height: 360px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="text-center mt-2 mb-4"> {{company_name}} </h1>
+  <img class="img-fluid" id="banner" src='https://c30464b4-fecf-4ded-adda-f7a0a0cbadde-00-11fuscoclz5en.pike.replit.dev/static/banner.jpeg' height='320' alt='HTML Dog'>'
+  <h2 class="text-center">About Devdopz</h2>
+  <p class="lead"">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut diam ante. Donec at hendrerit dolor. Morbi dui justo, laoreet ac nisi vel, sodales pulvinar est. Nulla facilisi. In turpis orci, fermentum vitae sollicitudin vitae, suscipit id purus. Cras a semper eros. Curabitur vel accumsan eros, ut scelerisque ligula. Etiam vel libero rhoncus, ultricies lectus eu, pulvinar lorem. In neque enim, dictum ac gravida sed, imperdiet at lectus. In consequat justo ultrices erat semper, at fringilla urna auctor. Sed turpis neque, semper eget tempus sed, posuere interdum odio. Sed nisl felis, commodo quis tortor id, imperdiet tincidunt dolor. Pellentesque ornare enim eget semper accumsan. Nam scelerisque, justo quis scelerisque mollis, magna lacus faucibus felis, commodo faucibus nunc dui a nisl. Nunc in ipsum faucibus, condimentum arcu id, vulputate elit. Cras vestibulum metus elit, at lobortis quam ornare nec. </p>
+  <h2>Open Positions</h2>
+  <div>
+    {% for job in jobs %}
+      {% include 'jobitem.html' %}
+    {% endfor %}
+  </div>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg"">Contact Us</button>
+      <p class="mt-4">Copyright 2023, Devdopz</p>
+    </div>
+    </div>
+</body>
+</html>
